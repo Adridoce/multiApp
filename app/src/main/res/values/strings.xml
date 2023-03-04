@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CursoAndroid</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
+    <string name="height">Altura</string>
+    <string name="weight">Peso</string>
+    <string name="age">Edad</string>
+    <string name="Calculate">Calcular</string>
+    <string name="result">Your IMC</string>
+    <string name="recalculate">Recalcular</string>
+
+    <string name="error">Error</string>
+
+    <string name="title_peso_bajo">Bajo peso</string>
+    <string name="description_peso_bajo">Estas por debajo de lo óptimo para tu peso y altura</string>
+
+    <string name="title_peso_normal">Peso normal</string>
+    <string name="description_peso_normal">Estas en el peso normal para tu peso y altura</string>
+
+    <string name="title_peso_sobrepeso">Sobrepeso</string>
+    <string name="description_peso_sobrepeso">Estas por encima de tu peso ideal</string>
+
+    <string name="title_peso_obesidad">Obesidad</string>
+    <string name="description_peso_obesidad">Estas muy por encima de tu peso ideal</string>
+</resources>
