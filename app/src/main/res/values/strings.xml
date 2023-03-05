@@ -1,4 +1,5 @@
 <resources>
+    <!--IMC App-->
     <string name="app_name">CursoAndroid</string>
     <string name="male">Hombre</string>
     <string name="female">Mujer</string>
@@ -22,4 +23,14 @@
 
     <string name="title_peso_obesidad">Obesidad</string>
     <string name="description_peso_obesidad">Estas muy por encima de tu peso ideal</string>
+
+    <!--TodoApp-->
+    <string name="todo_title">Bienvenido, Adri</string>
+    <string name="categories">Categorias</string>
+    <string name="todo_task">Tareas</string>
+    <string name="todo_dialog_add_task">Añade la tarea</string>
+    <string name="todo_dialog_bussines">Negocios</string>
+    <string name="todo_dialog_personal">Personal</string>
+    <string name="todo_dialog_others">Otros</string>
+    <string name="todo_dialog_add_task_button">Crear tarea</string>
 </resources>
