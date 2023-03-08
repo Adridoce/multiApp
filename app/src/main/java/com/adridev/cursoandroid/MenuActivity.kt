@@ -4,24 +4,23 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.adridev.cursoandroid.databinding.ActivityMenuBinding
 import com.adridev.cursoandroid.imccalculator.ImcCalculatorActivity
 import com.adridev.cursoandroid.superheroapp.SuperHeroListActivity
 import com.adridev.cursoandroid.todoapp.TodoActivity
 
 class MenuActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu)
 
-//      val btnSaludApp = findViewById<Button>(R.id.btnSaludApp)
-        val btnIMCApp = findViewById<Button>(R.id.btnIMCApp)
-        val btnToDo = findViewById<Button>(R.id.btnToDoApp)
-        val btnSuperhero = findViewById<Button>(R.id.btnSuperHero)
+    private lateinit var binding: ActivityMenuBinding
+    override fun onCreate(savedInstanceState: Bundle?){
+        super.onCreate(savedInstanceState)
+        binding = ActivityMenuBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
 //      btnSaludApp.setOnClickListener { navigateToSaludApp() }
-        btnIMCApp.setOnClickListener { navigateToIMCApp() }
-        btnToDo.setOnClickListener { navigateToToDoApp() }
-        btnSuperhero.setOnClickListener { navigateToSuperHeroApp() }
+        binding.btnIMCApp.setOnClickListener { navigateToIMCApp() }
+        binding.btnToDoApp.setOnClickListener { navigateToToDoApp() }
+        binding.btnSuperHero.setOnClickListener { navigateToSuperHeroApp() }
     }
 
     private fun navigateToSuperHeroApp() {
