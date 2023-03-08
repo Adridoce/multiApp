@@ -53,4 +53,7 @@ dependencies {
     // Picasso
     implementation 'com.squareup.picasso:picasso:2.8'
 
+    // Datastore
+    implementation 'androidx.datastore:datastore-preferences:1.0.0'
+
 }

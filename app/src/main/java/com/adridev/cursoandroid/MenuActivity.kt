@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import com.adridev.cursoandroid.databinding.ActivityMenuBinding
 import com.adridev.cursoandroid.imccalculator.ImcCalculatorActivity
+import com.adridev.cursoandroid.settings.SettingsActivity
 import com.adridev.cursoandroid.superheroapp.SuperHeroListActivity
 import com.adridev.cursoandroid.todoapp.TodoActivity
 
@@ -21,6 +22,7 @@ class MenuActivity : AppCompatActivity() {
         binding.btnIMCApp.setOnClickListener { navigateToIMCApp() }
         binding.btnToDoApp.setOnClickListener { navigateToToDoApp() }
         binding.btnSuperHero.setOnClickListener { navigateToSuperHeroApp() }
+        binding.btnSettings.setOnClickListener { navigateToSettings() }
     }
 
     private fun navigateToSuperHeroApp() {
@@ -35,6 +37,11 @@ class MenuActivity : AppCompatActivity() {
 
     private fun navigateToIMCApp() {
         val intent = Intent(this, ImcCalculatorActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToSettings() {
+        val intent = Intent(this, SettingsActivity::class.java)
         startActivity(intent)
     }
 
