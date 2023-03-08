@@ -5,3 +5,4 @@ Múltiples funcionalidades en una sola aplicación
 2- Calculadora de IMC
 3- TodoApp
 4- SuperHeroApp
+5. Settings
